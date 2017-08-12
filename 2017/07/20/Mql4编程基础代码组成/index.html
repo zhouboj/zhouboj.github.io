@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://job.eyubaba.com/2017/07/20/Mql4编程基础代码组成/index.html">
 <meta property="og:site_name" content="老人与海">
 <meta property="og:description" content="开发自己的指标和EA交易">
-<meta property="og:updated_time" content="2017-08-06T09:40:59.000Z">
+<meta property="og:updated_time" content="2017-08-08T10:01:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mql4编程基础代码组成">
 <meta name="twitter:description" content="开发自己的指标和EA交易">
@@ -363,7 +363,8 @@
 
       
         <p>Language Basics<br>The MetaQuotes Language 4 (MQL4) is an object-oriented high-level programming language intended for writing automated trading strategies, custom technical indicators for the analysis of various financial markets. It allows not only to write a variety of expert systems, designed to operate in real time, but also create their own graphical tools to help you make trade decisions.</p>
-<h2 id="1、变量"><a href="#1、变量" class="headerlink" title="1、变量"></a>1、变量</h2><p><strong>整形数据（int）</strong><br><em>例：int a=0;</em><br><strong>浮点型数据（double）</strong> <em>例：double EURUSDprice=1.23900;</em><br><strong>字符串数据（string）</strong> <em>string a=”EURUSD;”</em><br><em>string类型的变量初始化值不等于””;</em><br><strong>颜色数据（color）</strong> <em>color  a= Rad;</em> //选中Rad按F1键可以调出其它色彩代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">//+------------------------------------------------------------------+</div><div class="line">//|                                                  0805scripts.mq4 |</div><div class="line">//|                        Copyright 2017, MetaQuotes Software Corp. |</div><div class="line">//|                                             https://www.mql5.com |</div><div class="line">//+------------------------------------------------------------------+</div><div class="line">#property copyright &quot;Copyright 2017, MetaQuotes Software Corp.&quot;</div><div class="line">#property link      &quot;https://www.mql5.com&quot;</div><div class="line">#property version   &quot;1.00&quot;</div><div class="line">#property strict</div><div class="line">//+------------------------------------------------------------------+</div><div class="line">//| Script program start function                                    |</div><div class="line">//+------------------------------------------------------------------+</div><div class="line">int </div><div class="line">void OnStart()</div><div class="line">  &#123;</div><div class="line">//---</div><div class="line">   </div><div class="line">  &#125;</div><div class="line">//+------------------------------------------------------------------+</div></pre></td></tr></table></figure></p>
+<h2 id="1、变量"><a href="#1、变量" class="headerlink" title="1、变量"></a>1、变量</h2><p><strong>整形数据（int）</strong><br><em>例：int a=0;</em><br><strong>浮点型数据（double）</strong> <em>例：double EURUSDprice=1.23900;</em><br><strong>字符串数据（string）</strong> <em>例：string a=”EURUSD;”</em><br><em>string类型的变量初始化值不等于””;</em><br><strong>颜色数据（color）</strong> <em>例：color  a= Rad;</em> //选中Rad按F1键可以调出其它色彩代码<br><strong>日期时间数据（datetime）</strong> <em>例：datetime a=D’2017.08.07 00:00`;</em><br><strong>外部输入参数变量 extern和input的区别</strong> <em>input在函数体内的变量，变量不能赋值新值</em><br><del>代码例子：</del></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">//+------------------------------------------------------------------+</div><div class="line">//|                                                  0805scripts.mq4 |</div><div class="line">//|                        Copyright 2017, MetaQuotes Software Corp. |</div><div class="line">//|                                             https://www.mql5.com |</div><div class="line">//+------------------------------------------------------------------+</div><div class="line">#property copyright &quot;Copyright 2017, MetaQuotes Software Corp.&quot;</div><div class="line">#property link      &quot;https://www.mql5.com&quot;</div><div class="line">#property version   &quot;1.00&quot;</div><div class="line">#property strict</div><div class="line">#property show_inputs //调用输入参数模块</div><div class="line">//+------------------------------------------------------------------+</div><div class="line">//| Script program start function                                    |</div><div class="line">//+------------------------------------------------------------------+</div><div class="line">int a=122345;</div><div class="line">double b=3.3;</div><div class="line">string c=&quot;zhouboj&quot;;</div><div class="line"></div><div class="line">void OnStart()</div><div class="line">  &#123;</div><div class="line">//---</div><div class="line">   </div><div class="line">  &#125;</div><div class="line">//+------------------------------------------------------------------+</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -478,7 +479,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -496,7 +497,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
