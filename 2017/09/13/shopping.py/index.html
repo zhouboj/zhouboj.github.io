@@ -86,13 +86,13 @@
 
 <meta name="description" content="购物车编程练习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python之路——基础三">
+<meta property="og:title" content="练习一之购物">
 <meta property="og:url" content="http://job.eyubaba.com/2017/09/13/shopping.py/index.html">
 <meta property="og:site_name" content="老人与海">
 <meta property="og:description" content="购物车编程练习">
-<meta property="og:updated_time" content="2017-09-13T08:36:32.000Z">
+<meta property="og:updated_time" content="2017-09-13T09:18:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python之路——基础三">
+<meta name="twitter:title" content="练习一之购物">
 <meta name="twitter:description" content="购物车编程练习">
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title> python之路——基础三 | 老人与海 </title>
+  <title> 练习一之购物 | 老人与海 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -264,7 +264,7 @@
             
             
               
-                python之路——基础三
+                练习一之购物
               
             
           </h1>
@@ -331,7 +331,7 @@
 
           
           
-             <span id="/2017/09/13/shopping.py/" class="leancloud_visitors" data-flag-title="python之路——基础三">
+             <span id="/2017/09/13/shopping.py/" class="leancloud_visitors" data-flag-title="练习一之购物">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -362,31 +362,7 @@
       
 
       
-        <h1 id="Author-zhoubo-J"><a href="#Author-zhoubo-J" class="headerlink" title="Author:zhoubo.J"></a>Author:zhoubo.J</h1><p>product_list = [<br>    (‘iphone’,5800),<br>    (‘Mac pro’,9800),<br>    (‘Bike’,800),<br>    (‘Wathch’,10060),<br>    (‘Coffee’,31),<br>    (‘Alex python’,120)<br>]</p>
-<p>shopping_list =[]<br>salary = input(“Input your salary:”)<br>if salary.isdigit(): #判断是否整数<br>    salary = int(salary) # 转换成int<br>    while True:<br>        for index,item in enumerate(product_list):<br>            print(index,item)</p>
-<pre><code>user_choice = input(&quot;选择要买嘛？》》》》：&quot;)
-if user_choice.isdigit():
-    user_choice = int(user_choice)
-    if user_choice &lt; len(product_list) and user_choice &gt;=0:
-        p_item = product_list[user_choice] #通过下标把商品取出来
-        if p_item[1] &lt;= salary: #买得起
-            shopping_list.append(p_item)
-            salary -= p_item[1]
-            print(&quot;Added %s into shopping cart,your current balance is \033[31;1m%s\033[0m&quot; %(p_item,salary))
-        else:
-            print(&quot;\033[41;1m你的余额只剩[%s]啦，不能买了\033[0m&quot; % salary)
-    else:
-        print(&quot;product code [%s] is not exist!&quot;% user_choice)
-
-elif user_choice == &apos;q&apos;:
-    print(&quot;------shopping list--------&quot;)
-    for p in shopping_list:
-        print(p)
-    print(&quot;Your current balance:&quot;,salary)
-    exit()
-else:
-    print(&quot;invalid option&quot;)
-</code></pre>
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Author:zhoubo.J</span></div><div class="line"></div><div class="line">product_list = [</div><div class="line">    (<span class="string">'iphone'</span>,<span class="number">5800</span>),</div><div class="line">    (<span class="string">'Mac pro'</span>,<span class="number">9800</span>),</div><div class="line">    (<span class="string">'Bike'</span>,<span class="number">800</span>),</div><div class="line">    (<span class="string">'Wathch'</span>,<span class="number">10060</span>),</div><div class="line">    (<span class="string">'Coffee'</span>,<span class="number">31</span>),</div><div class="line">    (<span class="string">'Alex python'</span>,<span class="number">120</span>)</div><div class="line">]</div><div class="line"></div><div class="line">shopping_list =[]</div><div class="line">salary = input(<span class="string">"Input your salary:"</span>)</div><div class="line"><span class="keyword">if</span> salary.isdigit(): <span class="comment">#判断是否整数</span></div><div class="line">    salary = int(salary) <span class="comment"># 转换成int</span></div><div class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">        <span class="keyword">for</span> index,item <span class="keyword">in</span> enumerate(product_list):</div><div class="line">            print(index,item)</div><div class="line"></div><div class="line">        user_choice = input(<span class="string">"选择要买嘛？》》》》："</span>)</div><div class="line">        <span class="keyword">if</span> user_choice.isdigit():</div><div class="line">            user_choice = int(user_choice)</div><div class="line">            <span class="keyword">if</span> user_choice &lt; len(product_list) <span class="keyword">and</span> user_choice &gt;=<span class="number">0</span>:</div><div class="line">                p_item = product_list[user_choice] <span class="comment">#通过下标把商品取出来</span></div><div class="line">                <span class="keyword">if</span> p_item[<span class="number">1</span>] &lt;= salary: <span class="comment">#买得起</span></div><div class="line">                    shopping_list.append(p_item)</div><div class="line">                    salary -= p_item[<span class="number">1</span>]</div><div class="line">                    print(<span class="string">"Added %s into shopping cart,your current balance is \033[31;1m%s\033[0m"</span> %(p_item,salary))</div><div class="line">                <span class="keyword">else</span>:</div><div class="line">                    print(<span class="string">"\033[41;1m你的余额只剩[%s]啦，不能买了\033[0m"</span> % salary)</div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                print(<span class="string">"product code [%s] is not exist!"</span>% user_choice)</div><div class="line"></div><div class="line">        <span class="keyword">elif</span> user_choice == <span class="string">'q'</span>:</div><div class="line">            print(<span class="string">"------shopping list--------"</span>)</div><div class="line">            <span class="keyword">for</span> p <span class="keyword">in</span> shopping_list:</div><div class="line">                print(p)</div><div class="line">            print(<span class="string">"Your current balance:"</span>,salary)</div><div class="line">            exit()</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            print(<span class="string">"invalid option"</span>)</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -453,7 +429,7 @@ else:
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/09/13/shopping.py/"
-           data-title="python之路——基础三" data-url="http://job.eyubaba.com/2017/09/13/shopping.py/">
+           data-title="练习一之购物" data-url="http://job.eyubaba.com/2017/09/13/shopping.py/">
       </div>
     
   </div>
@@ -477,17 +453,8 @@ else:
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -599,22 +566,6 @@ else:
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Author-zhoubo-J"><span class="nav-number">1.</span> <span class="nav-text">Author:zhoubo.J</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
     </div>
